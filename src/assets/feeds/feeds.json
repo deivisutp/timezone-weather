@@ -6,7 +6,9 @@
           "key": "1",
           "photo_url": "/cabul.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "cabul",
+          "wheater" : ""
         }
     },
     {
@@ -16,7 +18,9 @@
         "key": "2",
         "photo_url": "/joanesburgo.png",
         "getLikes": [],
-        "getComments": []
+        "getComments": [],
+        "country_name": "joanesburgo",
+        "wheater" : ""
     }
     },
     {
@@ -26,7 +30,9 @@
         "key": "4",
         "photo_url": "/tirana.png",
         "getLikes": [],
-        "getComments": []
+        "getComments": [],
+        "country_name": "tirana",
+        "wheater" : ""
     }
     },
     {
@@ -36,7 +42,9 @@
         "key": "4",
         "photo_url": "/berlim.png",
         "getLikes": [],
-        "getComments": []
+        "getComments": [],
+        "country_name": "berlim",
+        "wheater" : ""
     }
     },
     {
@@ -46,7 +54,9 @@
         "key": "5",
         "photo_url": "/viena.png",
         "getLikes": [],
-        "getComments": []
+        "getComments": [],
+        "country_name": "viena",
+        "wheater" : ""
     }
     },
     {
@@ -56,7 +66,9 @@
             "key": "6",
             "photo_url": "/buenos_aires.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "buenos+aires",
+            "wheater" : ""
     }
     },    
     {
@@ -66,7 +78,9 @@
             "key": "7",
             "photo_url": "/bruxelas.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "bruxelas",
+            "wheater" : ""
     }
     },    
     {
@@ -76,7 +90,9 @@
             "key": "8",
             "photo_url": "/la_paz.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "la+paz",
+            "wheater" : ""
     }
     },    
     {
@@ -86,7 +102,9 @@
             "key": "9",
             "photo_url": "/toronto.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "toronto",
+            "wheater" : ""
     }
     },  
     {
@@ -96,7 +114,9 @@
             "key": "10",
             "photo_url": "/santiago.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "santiago",
+            "wheater" : ""
     }
     },  
     {
@@ -106,7 +126,9 @@
             "key": "11",
             "photo_url": "/bogota.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "bogota",
+            "wheater" : ""
     }
     }, 
     {
@@ -116,7 +138,9 @@
             "key": "12",
             "photo_url": "/seul.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "seul",
+            "wheater" : ""
     }
     },
     {
@@ -126,7 +150,9 @@
             "key": "13",
             "photo_url": "/havana.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "havana",
+            "wheater" : ""
     }
     },
     {
@@ -136,7 +162,9 @@
             "key": "14",
             "photo_url": "/copenhagen.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "copenhagen",
+            "wheater" : ""
     }
     },
     {
@@ -146,7 +174,9 @@
             "key": "15",
             "photo_url": "/cairo.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "cairo",
+            "wheater" : ""
     }
     },
     {
@@ -156,7 +186,9 @@
             "key": "16",
             "photo_url": "/quito.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "quito",
+            "wheater" : ""
     }
     },
     {
@@ -166,7 +198,9 @@
             "key": "17",
             "photo_url": "/madrid.png",
             "getLikes": [],
-            "getComments": []
+            "getComments": [],
+            "country_name": "madrid",
+            "wheater" : ""
     }
     },
     {
@@ -176,7 +210,9 @@
           "key": "18",
           "photo_url": "/whashington.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "whashington",
+          "wheater" : ""
         }
     },
     {
@@ -186,7 +222,9 @@
           "key": "19",
           "photo_url": "/paris.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "paris",
+          "wheater" : ""
         }
     },
     {
@@ -196,7 +234,9 @@
           "key": "20",
           "photo_url": "/atenas.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "atenas",
+          "wheater" : ""
         }
     },
     {
@@ -206,7 +246,9 @@
           "key": "21",
           "photo_url": "/nova_delhi.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "nova+delhi",
+          "wheater" : ""
         }
     },
     {
@@ -216,7 +258,9 @@
           "key": "22",
           "photo_url": "/jerusalem.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "jerusalem",
+          "wheater" : ""
         }
     },
     {
@@ -226,7 +270,9 @@
           "key": "23",
           "photo_url": "/roma.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "roma",
+          "wheater" : ""
         }
     },
     {
@@ -236,7 +282,9 @@
           "key": "24",
           "photo_url": "/tokyo.jpg",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "tokyo",
+          "wheater" : ""
         }
     },
     {
@@ -246,7 +294,9 @@
         "key": "25",
         "photo_url": "/mexico2.png",
         "getLikes": [],
-        "getComments": []
+        "getComments": [],
+        "country_name": "cidade+do+mexico",
+        "wheater" : ""
       }
     },
     {
@@ -256,7 +306,9 @@
           "key": "26",
           "photo_url": "/lima.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "lima",
+          "wheater" : ""
         }
     },
     {
@@ -266,7 +318,9 @@
           "key": "27",
           "photo_url": "/lisboa.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "lisboa",
+          "wheater" : ""
         }
     },
     {
@@ -276,7 +330,9 @@
           "key": "28",
           "photo_url": "/london.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "londres",
+          "wheater" : ""
         }
     },
     {
@@ -286,7 +342,9 @@
           "key": "29",
           "photo_url": "/santo_domingo.png",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "santo+domingo",
+          "wheater" : ""
         }
     },
     {
@@ -296,7 +354,9 @@
         "key": "30",
         "photo_url": "/moscow.png",
         "getLikes": [],
-        "getComments": []
+        "getComments": [],
+        "country_name": "moscow",
+        "wheater" : ""
       }
     },
     {
@@ -307,7 +367,9 @@
         "photo_url": "/rio.png",
         "createdAt": "2021-04-11T13:44:57.531Z",
         "getLikes": [],
-        "getComments": []
+        "getComments": [],
+        "country_name": "rio+de+janeiro",
+        "wheater" : ""
       }
     },
     {
@@ -318,7 +380,9 @@
           "photo_url": "/estocolmo.png",
           "createdAt": "2021-04-11T13:44:57.531Z",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "estocolmo",
+          "wheater" : ""
         }
       },
       {
@@ -329,7 +393,9 @@
           "photo_url": "/zurique.png",
           "createdAt": "2021-04-11T13:44:57.531Z",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "zurique",
+          "wheater" : ""
         }
       },
       {
@@ -340,7 +406,9 @@
           "photo_url": "/montevideo.png",
           "createdAt": "2021-04-11T13:44:57.531Z",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "montevideo",
+          "wheater" : ""
         }
       },
       {
@@ -351,7 +419,9 @@
           "photo_url": "/Caracas.png",
           "createdAt": "2021-04-11T13:44:57.531Z",
           "getLikes": [],
-          "getComments": []
+          "getComments": [],
+          "country_name": "caracas",
+          "wheater" : ""
         }
       }
   ]

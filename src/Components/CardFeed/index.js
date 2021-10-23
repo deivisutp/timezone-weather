@@ -31,17 +31,27 @@ const CardFeed = ({ feed }) => {
     const [like, setLike] = useState(isLiked);
 
     const [commentsPhoto, setCommentsPhoto] = useState(photo.getComments);
+    const [wheaterPhoto, setWheaterPhoto] = useState('');
 
     const [comment, setComment] = useState('');
     const [disabled, setDisabled] = useState(true);
 
+    const getWheather = async (country_name) => {
+        const res = await api.get(`/countries/${country_name}`);
+        if (res.status === 200) {
+            console.log(res);
+            setWheaterPhoto(res.data);
+        }
+    };
+
     useEffect(() => {
+        getWheather(photo.country_name);
         if (comment.trim()) {
             setDisabled(false);
         } else {
             setDisabled(true);
         }
-    }, [comment]);
+    }, [commentsPhoto,wheaterPhoto]);
 
     const toggleLike = useCallback(async (photo_id) => {
        //Adjust
@@ -110,7 +120,11 @@ const CardFeed = ({ feed }) => {
                         <CommentList comments={commentsPhoto} />
                     )}
                 </Suspense>
-
+        
+                <div key={photo.country_name + 'wheatherid'}>
+                    blalallalala {wheaterPhoto}
+                </div>
+      
                 <StyleTimeAgo>
                    
                 </StyleTimeAgo>
