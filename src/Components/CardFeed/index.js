@@ -20,6 +20,7 @@ import {
     TimeAgo as StyleTimeAgo,
 } from './styles';
 import { toast } from 'react-toastify';
+import Spinner from '../Spinner';
 
 const CommentList = lazy(() => import('../CommentList'));
 
@@ -121,9 +122,12 @@ const CardFeed = ({ feed }) => {
                     )}
                 </Suspense>
         
-                <div key={photo.country_name + 'wheatherid'}>
-                    blalallalala {wheaterPhoto}
-                </div>
+                {wheaterPhoto.length > 0 ? (
+                   <div key={photo.country_name + 'wheatherid'} dangerouslySetInnerHTML={{__html: wheaterPhoto}}>
+                   </div> 
+                ) : (
+                    <Spinner/>
+                )}
       
                 <StyleTimeAgo>
                    
