@@ -94,13 +94,6 @@ const CardFeed = ({ feed }) => {
                     isAuthor={isAuthor || false}
                     photo={photo}
                 />
-            </CardHeader>
-
-            <ContainerPhoto>
-                <PhotoCard src={photo.photo_url} alt={photo.photo_url} />
-            </ContainerPhoto>
-
-            <CardDetails>
                 <p style={{ fontWeight: "bold" }}>
                     {//photo.uploadedBy.username}
                     }
@@ -115,7 +108,13 @@ const CardFeed = ({ feed }) => {
                         {photo.body}
                     </span>
                 </p>
+            </CardHeader>
 
+            <ContainerPhoto>
+                <PhotoCard src={photo.photo_url} alt={photo.photo_url} />
+            </ContainerPhoto>
+
+            <CardDetails>
                 <Suspense fallback={<p>Loading...</p>}>
                     {commentsPhoto.length > 0 && (
                         <CommentList comments={commentsPhoto} />
@@ -123,7 +122,13 @@ const CardFeed = ({ feed }) => {
                 </Suspense>
         
                 {wheaterPhoto.length > 0 ? (
-                   <div key={photo.country_name + 'wheatherid'} dangerouslySetInnerHTML={{__html: wheaterPhoto}}>
+                   <div key={photo.country_name + 'wheatherid'} 
+                        style={{
+                            font: "small-caption",
+                            fontSize: 12,
+                            fontWeight: 100
+                        }}
+                        dangerouslySetInnerHTML={{__html: wheaterPhoto}}>
                    </div> 
                 ) : (
                     <Spinner/>
