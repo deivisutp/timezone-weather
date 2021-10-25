@@ -35,10 +35,10 @@ const Main = () => {
     }, []);
 
     useEffect(() => {
-        if (filterFeeds.length > 0 && feeds.length > 1) {
-            feeds.filter((item) => item.photo.country_name === filterFeeds);
+      //  if (filterFeeds.length > 0 && feeds.length > 1) {
+       //     feeds.filter((item) => item.photo.country_name === filterFeeds);
             //setFeeds(state => state.filter((item) => item.photo.country_name === filterFeeds));
-        } 
+       // } 
 
         //if (page > 0 && feeds.length < totalFeeds) getFeeds(page);
         // eslint-disable-next-line react-hooks/exhaustive-deps

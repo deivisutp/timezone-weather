@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaSearch, FaUser, FaSignOutAlt } from 'react-icons/fa';
-import { useAuth } from '../../hooks/auth';
+import { FaSearch } from 'react-icons/fa';
 
 import SearchContainer from '../Search';
 
-import logo from '../../assets/logo.svg';
 import logo3 from '../../assets/logo3.png';
 import {
     Nav,
@@ -16,14 +14,12 @@ import {
     ContainerOptions
 } from './styles';
 
-import ModalUploadPhoto from '../Modal/ModalUploadPhoto';
 import { useSearch } from '../../hooks/search';
 import { useFeed } from '../../hooks/feed';
 
 let time = null;
 
 const Header = () => {
-    const { user, signOut } = useAuth();
     const { searchAction, setUsers, setLoading, setCountries } = useSearch();
     const [term, setTerm] = useState('');
     const { setFilter } = useFeed();

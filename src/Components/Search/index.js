@@ -12,7 +12,7 @@ import {
 } from './styles';
 
 const SearchContainer = ({ toggleClose }) => {
-    const { loading, users, countries } = useSearch();
+    const { loading, countries } = useSearch();
 
     return (
         <Container>

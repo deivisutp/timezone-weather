@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import avatar from '../../assets/avatar.png';
 import { useFeed } from "../../hooks/feed";
@@ -21,18 +20,15 @@ const Profile = ({ direction, username, name, usidebar = false, img, isOwner = f
 
     return (
         <Container direction={direction} usidebar={usidebar} onClick={(e) => filterCountries(username)}>
-                
-                {img ? ( //<Link to={`/profile/${username}`}>
+                {img ? ( 
                     <Img src={img} alt="avatar" usidebar={usidebar} isOwner={isOwner} />
                 ) : (
                     <Img src={avatar} alt="avatar" usidebar={usidebar} isOwner={isOwner} />
                 )}
                 
-            <div>
-                
-                {username && <Username usidebar={usidebar}>{username}</Username> //to={`/profile/${username}`}
+            <div>                
+                {username && <Username usidebar={usidebar}>{username}</Username>
                 }
-                
                 {name && <Name>{name}</Name>}
             </div>
         </Container>

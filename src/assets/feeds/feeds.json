@@ -2,7 +2,7 @@
     {
         "photo": {
           "id": 1,
-          "body": "Cabul",
+          "body": "Kabul",
           "key": "1",
           "photo_url": "/cabul.png",
           "getLikes": [],
@@ -14,7 +14,7 @@
     {
     "photo": {
         "id": 2,
-        "body": "Joanesburgo",
+        "body": "Johanesburgo",
         "key": "2",
         "photo_url": "/joanesburgo.png",
         "getLikes": [],
@@ -158,7 +158,7 @@
     {
         "photo": {
             "id": 14,
-            "body": "Copenhagen",
+            "body": "Copenhage",
             "key": "14",
             "photo_url": "/copenhagen.png",
             "getLikes": [],
@@ -278,7 +278,7 @@
     {
         "photo": {
           "id": 24,
-          "body": "Tokyo",
+          "body": "Tóquio",
           "key": "24",
           "photo_url": "/tokyo.jpg",
           "getLikes": [],
@@ -350,7 +350,7 @@
     {
       "photo": {
         "id": 30,
-        "body": "Moscow",
+        "body": "Moscou",
         "key": "30",
         "photo_url": "/moscow.png",
         "getLikes": [],
@@ -388,7 +388,7 @@
       {
         "photo": {
           "id": 33,
-          "body": "Zuerique",
+          "body": "Zurique",
           "key": "33",
           "photo_url": "/zurique.png",
           "createdAt": "2021-04-11T13:44:57.531Z",
@@ -401,7 +401,7 @@
       {
         "photo": {
           "id": 34,
-          "body": "Montevideo",
+          "body": "Montevidéu",
           "key": "34",
           "photo_url": "/montevideo.png",
           "createdAt": "2021-04-11T13:44:57.531Z",
