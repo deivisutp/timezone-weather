@@ -1,23 +1,33 @@
 import React, { createContext, useContext, useState, useCallback } from 'react';
 import api from '../services/api';
+import feedCountries from '../assets/feeds/feeds.json';
 
 const SearchContext = createContext();
 
 const SearchProvider = ({ children }) => {
     const [users, setUsers] = useState([]);
+    const [countries, setCountries] = useState([]);
     const [loading, setLoading] = useState(true);
 
     const searchAction = useCallback(async (term) => {
         try {
             if (term) {
                 setLoading(true);
-                const res = await api.get('/users/search/any', {
+              
+                const res = feedCountries.filter( country => {
+                    return country.photo.country_name.indexOf(term) > -1
+                });
+                
+                if (res.length > 0) {
+                    setCountries(res);
+                }
+           /*     const res = await api.get('/users/search/any', {
                     params: {
                         term,
                     }
                 });
 
-                if (res.status === 200) setUsers(res.data);
+                if (res.status === 200) setUsers(res.data); */
             }
         } catch (error) {
             throw Error(error);
@@ -27,7 +37,7 @@ const SearchProvider = ({ children }) => {
     }, []);
 
     return (
-        <SearchContext.Provider value={{ users, loading, searchAction, setUsers, setLoading }}>
+        <SearchContext.Provider value={{ users, countries, loading, searchAction, setUsers, setCountries, setLoading }}>
             {children}
         </SearchContext.Provider>
     )

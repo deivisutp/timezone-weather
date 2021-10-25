@@ -12,7 +12,7 @@ import {
 } from './styles';
 
 const SearchContainer = ({ toggleClose }) => {
-    const { loading, users } = useSearch();
+    const { loading, users, countries } = useSearch();
 
     return (
         <Container>
@@ -20,14 +20,14 @@ const SearchContainer = ({ toggleClose }) => {
                 <Spinner style={{ marginTop: "10px" }} />
             ) : (
                 <ContainerResult>
-                    {users.length > 0 ? (
-                        users.map((user) => (
-                            <ContainerProfile key={user.id} onClick={toggleClose}>
+                    {countries.length > 0 ? (
+                        countries.map((country) => (
+                            <ContainerProfile key={country.photo.country_name + "searchid"} onClick={toggleClose}>
                                 <Profile
                                     direction="row"
-                                    img={user.avatar_url}
-                                    username={user.username}
-                                    name={user.name}
+                                    img={country.photo.photo_url}
+                                    username={country.photo.country_name}
+                                    name={country.photo.body}
                                 />
                             </ContainerProfile>
                         ))

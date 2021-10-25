@@ -18,13 +18,15 @@ import {
 
 import ModalUploadPhoto from '../Modal/ModalUploadPhoto';
 import { useSearch } from '../../hooks/search';
+import { useFeed } from '../../hooks/feed';
 
 let time = null;
 
 const Header = () => {
     const { user, signOut } = useAuth();
-    const { searchAction, setUsers, setLoading } = useSearch();
+    const { searchAction, setUsers, setLoading, setCountries } = useSearch();
     const [term, setTerm] = useState('');
+    const { setFilter } = useFeed();
 
     useEffect(() => {
         clearTimeout(time);
@@ -37,19 +39,24 @@ const Header = () => {
         }
 
         return () => {
+            setCountries([]);
             setUsers([]);
         }
-    }, [searchAction, term, setUsers, setLoading]);
+    }, [searchAction, term, setUsers, setLoading, setCountries]);
 
     const toggleClose = () => {
         setTerm("");
     };
 
+    const filterCountries = () => {
+        setFilter("");
+    }
+
     return (
         <Nav>
             <Container>
                 <Link to="/">
-                    <Img src={logo3} alt="logo" />
+                    <Img src={logo3} alt="logo" onClick={(e) => filterCountries()} />
                 </Link>
 
 

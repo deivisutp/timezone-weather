@@ -22,7 +22,7 @@ const Main = () => {
     const [page, setPage] = useState(0);
     const { user } = useAuth();
    // const {  getFollows } = useFollow();
-    const { feeds, loading: feedLoading, totalFeeds, getFeeds, setFeeds } = useFeed();
+    const { feeds, loading: feedLoading, totalFeeds, getFeeds, setFeeds, filterFeeds } = useFeed();
 
     useEffect(() => {
         //getFollows();
@@ -35,9 +35,14 @@ const Main = () => {
     }, []);
 
     useEffect(() => {
-        if (page > 0 && feeds.length < totalFeeds) getFeeds(page);
+        if (filterFeeds.length > 0 && feeds.length > 1) {
+            feeds.filter((item) => item.photo.country_name === filterFeeds);
+            //setFeeds(state => state.filter((item) => item.photo.country_name === filterFeeds));
+        } 
+
+        //if (page > 0 && feeds.length < totalFeeds) getFeeds(page);
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [getFeeds, page]);
+    }, [filterFeeds]);
 
     const observer = useRef(
         new IntersectionObserver(
@@ -76,7 +81,12 @@ const Main = () => {
             <Container>
                 <ContainerFeeds>
                     {feeds &&
-                        feeds.map(feed => <CardFeed key={feed.photo.id} feed={feed} />)}
+                        filterFeeds.length > 0 ? (
+                            feeds
+                                .filter((item) => item.photo.country_name === filterFeeds)
+                                .map(feed => <CardFeed key={feed.photo.id} feed={feed} />)
+                        ) : (feeds.map(feed => <CardFeed key={feed.photo.id} feed={feed} />))
+                        }
 
                     {!!feeds && feeds.length > 0 && (
                         <button

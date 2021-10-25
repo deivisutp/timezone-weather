@@ -9,6 +9,7 @@ const FeedProvider = ({ children }) => {
     const [feeds, setFeeds] = useState([]);
     const [totalFeeds, setTotalFeeds] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [filterFeeds, setFilterFeeds] = useState("");
 
     const getFeeds = useCallback(async (page = 0) => {
         try {
@@ -64,8 +65,12 @@ const FeedProvider = ({ children }) => {
         setFeeds((state) => [data, ...state]);
     }, []);
 
+    const setFilter = useCallback((country_name) => {
+        setFilterFeeds(country_name);
+    },[]);
+
     return (
-        <FeedContext.Provider value={{ feeds, totalFeeds, loading, getFeeds, deletePhotoAction, deleteFollowAction, addFeed, setFeeds }}>
+        <FeedContext.Provider value={{ feeds, totalFeeds, loading, getFeeds, deletePhotoAction, deleteFollowAction, addFeed, setFeeds, setFilter, filterFeeds }}>
             {children}
         </FeedContext.Provider>
     )

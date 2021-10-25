@@ -40,7 +40,6 @@ const CardFeed = ({ feed }) => {
     const getWheather = async (country_name) => {
         const res = await api.get(`/countries/${country_name}`);
         if (res.status === 200) {
-            console.log(res);
             setWheaterPhoto(res.data);
         }
     };
