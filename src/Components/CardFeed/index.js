@@ -29,7 +29,7 @@ const formatter = buildFormatter(englishString);
 const CardFeed = ({ feed }) => {
 
     const { isAuthor, isLiked, photo } = feed;
-    const [like, setLike] = useState(isLiked);
+    const [like, setLike] = useState(isLiked); 
 
     const [commentsPhoto, setCommentsPhoto] = useState(photo.getComments);
     const [wheaterPhoto, setWheaterPhoto] = useState('');
@@ -37,7 +37,7 @@ const CardFeed = ({ feed }) => {
     const [comment, setComment] = useState('');
     const [disabled, setDisabled] = useState(true);
 
-    const getWheather = async (country_name) => {
+    const getWheather = async (country_name) => { 
         const res = await api.get(`/countries/${country_name}`);
         if (res.status === 200) {
             setWheaterPhoto(res.data);
